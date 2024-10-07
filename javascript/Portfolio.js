@@ -1,12 +1,17 @@
-function showSidebar(){
-    const side_bar = document.querySelector('.Mobile_Navbar');
+const hambuger_menu = document.querySelector(".Mobile_Hamburger_Menu");
+const Mobile_nav =  document.querySelector(".Mobile_Navbar");
+const close_button =  document.querySelector(".close_button");
 
-    side_bar.style.display = 'flex';
-}
+hambuger_menu.addEventListener("click", () => {
+    Mobile_nav.style.display = "block";
+    Mobile_nav.classList.toggle("active");
+});
 
-function hideSidebar(){
-    const side_bar = document.querySelector('.Mobile_Navbar');
+close_button.addEventListener("click", () => {
+    Mobile_nav.style.display = "none";
+});
 
-    side_bar.style.display = 'none';
-
-}
+document.querySelectorAll(".nav-link").forEach(
+    n => n.addEventListener("click", () => {
+        Mobile_nav.style.display = "none";
+    }))

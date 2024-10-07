@@ -50,6 +50,8 @@ background-color: rgba(0,0,53);
 display: none;
 flex-direction: column;
 justify-content: flex-start;
+align-items: center;
+
 }
 
 .Mobile_Navbar li{
@@ -57,8 +59,9 @@ width: 100%;
 }
 .Mobile_Navbar a{
     width: 100%;
+    margin-top: 50px;
 }
-
+/*
 .close_button {
     position: relative;
     right: 30px;
@@ -67,14 +70,25 @@ width: 100%;
     justify-content: flex-end;
     align-items: center;
 }
+*/
 
-.Mobile_Menu{
+.close_button {
+    position: relative;
+    width: 30px;
+    top: 10px;
+    right: 30px;
+    list-style: none;
+    display: block;
+    float: right;
+}
+
+.Mobile_Hamburger_Menu{
     display: none;
 }
 
 
 
-
+/* Adjusting iframe */
 iframe{
     width: 1000px;
     height: 540px;
@@ -86,6 +100,9 @@ iframe{
         height: 480px;
     }
 }
+
+/* Nav Bar collapses, Hamburger menu shows, Tablet Nav bar shows */
+
 @media(max-width: 847px) {
 
     iframe{
@@ -97,8 +114,13 @@ iframe{
         display: none;
     }
     
-    .Mobile_Menu{
+    .Mobile_Hamburger_Menu{
         display: block;
+    }
+
+
+    .Mobile_Navbar{
+        width: 50%;
     }
   
 }
@@ -111,18 +133,25 @@ iframe{
   
 }
 
-
+/* Nav bar for iphone pro max and large phone models */
 
 @media(max-width: 462px) {
     .collapse_on_mobile {
         display: none;
     }
     
-    .Mobile_Menu{
-        display: block;
-    }
+    
     .Mobile_Navbar{
         width: 50%;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+
+    nav li:first-child{
+        margin-right: 55%;
     }
 
     iframe{
@@ -131,6 +160,7 @@ iframe{
     }
 }
 
+/* Nav Bar collapses, Hamburger menu shows, Mobile Nav bar shows */
 @media(max-width: 380px) {
 
     iframe{
@@ -139,11 +169,21 @@ iframe{
     }
 
     .Mobile_Navbar{
+        width: 60%;
+    }
+
+    nav ul {
         width: 100%;
     }
+
+
+    nav li:first-child{
+        margin-right: 48%;
+    }
+   
 }
 
-
+/*nav bar for very very small phones */
 @media(max-width: 330px) {
 
     iframe{
