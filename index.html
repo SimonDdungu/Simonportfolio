@@ -5,36 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    
+    <!----Custom CSS-->
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
     <title>Simon Portfolio</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <b>CHAINZ</b>
+                </a>
+            </li>
+
+                <li class="collapse_on_mobile">
+                    <a href="#">Home</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#about-me">About Me</a>
+                <li class="collapse_on_mobile">
+                    <a  href="#about-me">About Me</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                <li class="collapse_on_mobile">
+                    <a href="#hobbies">Hobbies</a>
+                </li class="collapse_on_mobile">
+
+                <li class="collapse_on_mobile">
+                    <a  href="#portfolio">Portfolio</a>
+                </li class="collapse_on_mobile">
+
+                <li class="collapse_on_mobile">
+                    <a href="#fav_movies">Favourite Movies</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                <li class="collapse_on_mobile">
+                    <a  href="#contact">Contact</a>
+                </li>
+                <li class="Mobile_Menu" onclick="showSidebar()">
+                    <a  href="#">
+                        <img src="/images/hamburger.png" width = "26" alt="hamburger menu">
+                    </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#fav_movies">Favourite Movies</a>
-                </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
+                
+
+                <ul class="Mobile_Navbar">
+
+                    <li onclick="hideSidebar()" class="close_button">
+                        <img src="/images/circle.png" width = "26" alt="hamburger menu">
+                    </li>
+
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+    
+                    <li>
+                        <a  href="#about-me">About Me</a>
+                    </li>
+    
+                    <li>
+                        <a href="#hobbies">Hobbies</a>
+                    </li>
+    
+                    <li>
+                        <a  href="#portfolio">Portfolio</a>
+                    </li>
+    
+                    <li>
+                        <a href="#fav_movies">Favourite Movies</a>
+                    </li>
+    
+                    <li>
+                        <a  href="#contact">Contact</a>
+                    </li>
+                    
+                    
+
         </ul>
     </nav>
 
@@ -144,18 +195,20 @@
     <div class="container" id="fav_movies">
         <h5>Favourite Movies</h5>
         <hr >
-        <iframe width="928" height="522" src="https://www.youtube.com/embed/iszwuX1AK6A" name="my_iframe" title="Movies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/QdBZY2fkU-0" name="my_iframe" title="Movies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <hr>
 
-        <a class="btn btn-dark" href="https://www.youtube.com/embed/iszwuX1AK6A" target="my_iframe">
-            The Wolf of Wall Street
-        </a>
         <a class="btn btn-dark" href="https://www.youtube.com/embed/QdBZY2fkU-0" target="my_iframe">
             Grand Theft Auto VI
         </a>
         <a class="btn btn-dark" href="https://www.youtube.com/embed/BIhNsAtPbPI" target="my_iframe">
-           007: No Time To Die
+            007: No Time To Die
+         </a>
+        <a class="btn btn-dark" href="https://www.youtube.com/embed/sJbexcm4Trk" target="my_iframe">
+            Cyberpunk 2077: Phantom Liberty
         </a>
+
+        
 
     </div>
 
@@ -187,5 +240,7 @@
     </div>
 
 
+    <script src="/javascript/Portfolio.js"></script>
 </body>
 </html>
+

@@ -1,0 +1,158 @@
+nav {
+    background-color: rgba(0,0,53);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.453);
+  }
+  
+nav ul {
+    width: 95%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+
+
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: rgba(0,119,221);
+    color: white;
+    text-decoration: none;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.Mobile_Navbar{
+position: fixed;
+top: 0;
+right: 0;
+height: 100vh;
+width: 50%;
+z-index: 999; 
+background-color: rgba(0,0,53);
+display: none;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.Mobile_Navbar li{
+width: 100%;
+}
+.Mobile_Navbar a{
+    width: 100%;
+}
+
+.close_button {
+    position: relative;
+    right: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Mobile_Menu{
+    display: none;
+}
+
+
+
+
+iframe{
+    width: 1000px;
+    height: 540px;
+}
+
+@media(max-width: 1024px) {
+    iframe{
+        width: 900px;
+        height: 480px;
+    }
+}
+@media(max-width: 847px) {
+
+    iframe{
+        width: 700px;
+        height: 360px;
+    }
+
+    .collapse_on_mobile {
+        display: none;
+    }
+    
+    .Mobile_Menu{
+        display: block;
+    }
+  
+}
+@media(max-width: 770px) {
+
+    iframe{
+        width: 650px;
+        height: 360px;
+    }
+  
+}
+
+
+
+@media(max-width: 462px) {
+    .collapse_on_mobile {
+        display: none;
+    }
+    
+    .Mobile_Menu{
+        display: block;
+    }
+    .Mobile_Navbar{
+        width: 50%;
+    }
+
+    iframe{
+        width: 400px;
+        height: 210px;
+    }
+}
+
+@media(max-width: 380px) {
+
+    iframe{
+        width: 350px;
+        height: 190px;
+    }
+
+    .Mobile_Navbar{
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 330px) {
+
+    iframe{
+        width: 300px;
+        height: 165px;
+    }
+
+    .Mobile_Navbar{
+        width: 100%;
+    }
+}
+
