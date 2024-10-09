@@ -9,7 +9,10 @@
     <!----Custom CSS-->
     <link rel="stylesheet" href="css/styles.css">
     
-    
+    <!--icon pack-->
+    <script src="https://kit.fontawesome.com/94a6c9ca9c.js" crossorigin="anonymous"></script>
+
+
     <title>Simon Portfolio</title>
 </head>
 <body>
@@ -46,7 +49,7 @@
                     <a  href="#contact">Contact</a>
                 </li>
                 <li class="Mobile_Hamburger_Menu">
-                    <a  href="#">
+                    <a>
                         <img src="images/hamburger.png" width = "26" alt="hamburger menu">
                     </a>
                 </li>
@@ -67,7 +70,7 @@
                     </li>
     
                     <li class="nav-link">
-                        <a  href="#about-me">About Me</a>
+                        <a  href="#Bio">About Me</a>
                     </li>
     
                     <li class="nav-link">
@@ -95,17 +98,17 @@
 
     <div class="container" id="Bio">
 
-    <h3>Simon Chainbers Portfolio</h3>  
+    <h3>Simon Ddungu's Portfolio</h3>  
     <hr >  
     
         <h5>Biography</h5>
         <p>
-            Simon Chainbers is currently pursing a Bachelors degree in <b>Computer Science</b> at ISBAT University,
+            Simon Ddungu is currently pursing a Bachelors degree in <b>Computer Science</b> at ISBAT University,
             driven by a passion for Computers and Software Engineering, He aspires to be a successful <b><i>Fullstack Software Engineer</i></b> capable of building fully functioning web apps, mobile apps and softwares at large.
         </p>
         <p>
             Beyond Academics, He loves playing chess as well as following the latest news in footabll and NBA Basketball.
-            <br> Simon Chainber's is very dedicated and commited to excelling professionally in the field of Software Engineering.
+            <br> Simon is very dedicated and commited to excelling professionally in the field of Software Engineering.
         </p>
     </div>
     
@@ -218,27 +221,61 @@
     <br >
     <br >
 
-    <div class="container form-check" id="contact">
-        <h3>Contact</h3>
-        <hr >
+    <div class="container Contact_form" id="contact">
+       <h2>Send Me a Message</h2>
+       <form>
+        <div class="all_fields">
 
-        <form >
-            <label for="name">Username </label><br>
-            <input type="text" id="name" placeholder="Enter your name"><br><br>
+            <div class="each_field">
+                <label class="required">Username</label>
+                <input type="text" placeholder="Enter your Name" required>
+            </div>
 
-            <label>Gender:</label><br>
+            <div class="each_field">
+                <label class="required">Email</label>
+                <input type="text" placeholder="Enter your email" required>
+            </div>
 
-            <input class="form-check-input" type="radio" name="gender" id="male">
-            <label class="form-check-label" for="male">Male</label><br>
+            <div class="each_field">
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" required>
+            </div>
 
-            <input class="form-check-input" type="radio" name="gender" id="female">
-            <label class="form-check-label" for="female">Female</label><br><br>
+            <div class="gender">
+                <h6 class="required">Gender</h6>
+                <div class="gender_options">
 
-            <input class="form-check-input" type="checkbox" id="newsletter">
-            <label class="form-check-label" for="newsletter">Subscribe to newsletter</label><br><br>
+                    <div class="options">
+                        <input type="radio" id="Male" name="gender">
+                        <label for="Male">Male</label>
+                    </div>
+                    
+                    <div class="options">
+                        <input type="radio" id="Female" name="gender">
+                        <label for="Female">Female</label>
+                    </div>
+                    
+                    <div class="options">
+                        <input type="radio" id="complicated" name="gender">
+                        <label for="complicated">Confused</label>
+                    </div>
+                    
+                </div>
+               
+            </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+            <div class="message">
+                <label>Message</label>
+                <textarea placeholder="Write your message here..."></textarea>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+        
+       </form>
     </div>
 
 

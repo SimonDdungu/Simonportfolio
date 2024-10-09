@@ -1,6 +1,19 @@
+body{
+    padding-top: 60px;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
 nav {
     background-color: rgba(0,0,53);
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.453);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
   }
   
 nav ul {
@@ -37,6 +50,11 @@ nav li:first-child{
     margin-right: auto;
     font-size: 20px;
     pointer-events: none;
+}
+
+
+.btn{
+    margin-top: 10px;
 }
 
 .Mobile_Navbar{
@@ -122,6 +140,7 @@ iframe{
     .Mobile_Navbar{
         width: 50%;
     }
+
   
 }
 @media(max-width: 770px) {
@@ -155,17 +174,17 @@ iframe{
     }
 
     iframe{
-        width: 400px;
+        width: 380px;
         height: 210px;
     }
 }
 
 /* Nav Bar collapses, Hamburger menu shows, Mobile Nav bar shows */
-@media(max-width: 380px) {
+@media(max-width: 391px) {
 
     iframe{
-        width: 350px;
-        height: 190px;
+        width: 360px;
+        height: 200px;
     }
 
     .Mobile_Navbar{
@@ -183,6 +202,13 @@ iframe{
    
 }
 
+@media(max-width: 376px) {
+    iframe{
+        width: 350px;
+        height: 200px;
+    }
+}
+
 /*nav bar for very very small phones */
 @media(max-width: 330px) {
 
@@ -196,3 +222,90 @@ iframe{
     }
 }
 
+/*FORM STYLING */
+form{
+    width: 60%
+}
+
+.each_field label{
+    color: #333;
+    margin-top: 10px;
+}
+
+.required::before{
+    content: "* ";
+    color: red;
+}
+
+form .each_field input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+
+    font-size: 15px;
+    color: #333;
+
+    
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+form .gender {
+    margin-top: 20px;
+}
+
+form .gender_options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 50px;
+}
+
+form .options input, .options label{
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.gender h6{
+    margin-bottom: 15px;
+}
+
+/*customizing radio button color */
+input[type=radio] {
+    
+    accent-color: #000035;
+}
+
+form .message {
+    width: 100%;
+    outline: none;
+}
+
+form .message textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 5px 15px;
+    color: #333;
+}
+
+
+@media(max-width: 770px) {
+
+    form{
+        width: 80%;
+    }
+  
+}
+
+@media(max-width: 462px) {
+
+    form{
+        width: 90%;
+    }
+}
