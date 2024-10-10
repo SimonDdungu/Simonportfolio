@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
@@ -11,10 +13,12 @@
 
 
     <title>Simon Portfolio</title>
+
 </head>
 <body>
 
-    <nav>
+<!--------------------DESKTOP NAVIGATION BAR--------------------->
+    <nav class="navigation_bar">
         <ul>
             <li>
                 <a href="#">
@@ -23,7 +27,7 @@
             </li>
 
                 <li class="collapse_on_mobile">
-                    <a href="#">Home</a>
+                    <a href="#Home">Home</a>
                 </li>
 
                 <li class="collapse_on_mobile">
@@ -53,7 +57,7 @@
 
 
                 
-
+<!--------------------MOBILE NAVIGATION BAR--------------------->
                 <ul class="Mobile_Navbar">
 
                     <div class="close_button">
@@ -63,7 +67,7 @@
                      </div>
 
                     <li class="nav-link">
-                        <a href="#">Home</a>
+                        <a href="#Home">Home</a>
                     </li>
     
                     <li class="nav-link">
@@ -85,20 +89,23 @@
                     <li class="nav-link">
                         <a  href="#contact">Contact</a>
                     </li>
-                    
-                    
-
         </ul>
     </nav>
 
+
+
     <br >
 
-    <div class="container" id="Bio">
+
+
+<!------------------PAGE CONTENT----------------->
+
+    <div class="container" id="Home">
 
     <h3>Simon Ddungu's Portfolio</h3>  
     <hr >  
     
-        <h5>Biography</h5>
+        <h5 id="Bio">Biography</h5>
         <p>
             Simon Ddungu is currently pursing a Bachelors degree in <b>Computer Science</b> at ISBAT University,
             driven by a passion for Computers and Software Engineering, He aspires to be a successful <b><i>Fullstack Software Engineer</i></b> capable of building fully functioning web apps, mobile apps and softwares at large.
@@ -122,9 +129,8 @@
 
     </div>
 
-    <br >
-    <br >
-
+<!--  TYRING TO USE CARDS INSTEAD
+        
     <div class="container" id="hobbies">
         <h5>Hobbies</h5>
         <ul>
@@ -133,7 +139,56 @@
             <li>Playing Basketball</li>
         </ul>
     </div>
+-->
 
+        <div class="container Hobbies_cards" id="hobbies">
+            <h5>Hobbies</h5>
+            <hr>
+                <div class="All_cards">
+                    <!--CHESS-->
+                    <div class="Each_card">
+                        <div class="Card_image">
+                            <img src="images/chess.jpg" alt="chess image">
+                        </div>
+                        <div class="card_description">
+                            <h6>Playing Chess</h6>
+                            <hr>
+                            <p>I enjoy the strategic challenge of chess, where every move requires critical thinking and planning. 
+                            <br >Each game sharpens my problem-solving skills and encourages a deep focus.</p>
+                        </div>
+                    </div>
+
+                    <!--FOOTBALL-->
+                    <div class="Each_card">
+                        <div class="Card_image">
+                            <img src="images/CR7.jpg" alt="C. Ronaldo image">
+                        </div>
+                        <div class="card_description">
+                            <h6>Watching Football</h6>
+                            <hr>
+                            <p>As a passionate football fan, I love getting involved in the excitement of matches. 
+                            <br >Following my favorite teams allows me to appreciate the skill of teamwork and strategy on the field.</p>
+                        </div>
+                    </div>
+
+                        <!--BASKETBALL-->
+                        <div class="Each_card">
+                            <div class="Card_image">
+                                <img src="images/curry.jpg" alt="Chef Curry image">
+                            </div>
+                            <div class="card_description">
+                                <h6>Playing Basketball</h6>
+                                <hr>
+                                <p>I actively engage in basketball, which keeps me fit and encourages teamwork and communication, 
+                                I also enjoy the excitement of competition on the court.</p>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+    
+
+      <!--  TYRING TO USE CARDS INSTEAD
 
     <div class="container" id="portfolio">
         <h5>Portfolio</h5>
@@ -142,9 +197,59 @@
             <li>Bootstrap Restuarant website</li>
             <li>Notes Android App</li>
         </ol>
+    -->
+        
+
+        <div class="container Portfolio_cards" id="portfolio">
+            <h5>Portfolio</h5>
+            <hr>
+                <div class="All_cards">
+                    <!--Spring Boot Web App-->
+                    <div class="Each_card">
+                        <div class="Card_image">
+                            <img src="images/spring boot.jpg" alt="E-commerce site image">
+                        </div>
+                        <div class="card_description">
+                            <h6>Spring Boot Web Apps</h6>
+                            <hr>
+                            <p>I build robust and scalable web applications using Spring Boot, 
+                            focusing on backend logic, API development, and efficient data management.</p>
+                        </div>
+                    </div>
+
+                    <!--React Web-->
+                    <div class="Each_card">
+                        <div class="Card_image">
+                            <img src="images/react website 2.png" alt="React website image">
+                        </div>
+                        <div class="card_description">
+                            <h6>React Websites</h6>
+                            <hr>
+                            <p>I create dynamic and interactive web applications using React, 
+                            delivering engaging user experiences and responsive designs.</p>
+                        </div>
+                    </div>
+
+                        <!--Notes App-->
+                        <div class="Each_card">
+                            <div class="Card_image">
+                                <img src="images/Notes app 2.jpg" alt="Notes App image">
+                            </div>
+                            <div class="card_description">
+                                <h6>Notes App</h6>
+                                <hr>
+                                <p>Developed a cross-platform mobile app for taking and organizing notes, 
+                                utilizing React Native for a seamless and interactive user experience.</p>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
 
         <br >
 
+
+    <div class="container">
         <h5>Favourite Books</h5>
 
         <table class="table">
@@ -234,12 +339,12 @@
             </div>
 
             <div class="each_field">
-                <label>Phone Number</label>
+                <label class="required">Phone Number</label>
                 <input type="text" placeholder="Enter your phone number" required>
             </div>
 
             <div class="gender">
-                <h6 class="required">Gender</h6>
+                <h6>Gender</h6>
                 <div class="gender_options">
 
                     <div class="options">
@@ -275,6 +380,13 @@
        </form>
     </div>
 
+
+
+
+
+    <footer>
+        <p>Copyright © 2024. Designed and Developed by Simon Ddungu.</p>
+    </footer>
 
     <script src="javascript/Portfolio.js"></script>
 </body>
