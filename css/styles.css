@@ -1,6 +1,7 @@
 
 body{
-    padding-top: 60px;
+    padding-top: 50px;
+    background-color: #ffffff;
 }
 
 html{
@@ -8,6 +9,9 @@ html{
     scroll-padding-top: 60px;
 }
 
+.blue_text{
+    color: #026ac3;
+}
 
 nav {
     background-color: rgba(0,0,53);
@@ -73,7 +77,6 @@ display: none;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-
 }
 
 .Mobile_Navbar li{
@@ -102,6 +105,7 @@ width: 100%;
     list-style: none;
     display: block;
     float: right;
+    transition: all 0.75s ease;
 }
 
 .Mobile_Hamburger_Menu{
@@ -206,7 +210,7 @@ iframe{
    
 }
 
-/* Iphone 11 Pro, 12, 13 pro screen sizes*/
+/* Iphone X and 12, 13 Minis pro screen sizes*/
 @media(max-width: 376px) {
     iframe{
         width: 350px;
@@ -214,7 +218,7 @@ iframe{
     }
 }
 
-/*Iphone X, Samsung S10 screen sizes */
+/*Smaller screens */
 @media(max-width: 361px) {
     iframe{
         width: 335px;
@@ -239,7 +243,116 @@ iframe{
 
 
 
-/*Card Styling*/
+
+
+
+
+
+
+
+
+/*HERO SECTION*/
+
+
+.Hero_page h3{
+    text-align: center;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0 60px;
+}
+.hero img{
+    width: 50%;
+    height: auto;
+}
+.hero_content h5{
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.hero_content h5::after{
+    content: "";
+    display: block;
+    position: relative;
+    background-color: #026ac3;
+    width: 42%;
+    height: 5px;
+}
+
+.hero_content{
+    width: 50%;
+    font-size: 16px;
+    
+}
+/*Hero Responsive on Tablets*/
+@media(max-width: 1028px){
+    .hero_content h5::after{
+        width: 26%;
+    }
+}
+@media(max-width: 838px){
+    .hero_content h5::after{
+        width: 33%;
+    }
+    .hero_content{
+        font-size: 14px;
+        
+    }
+}
+
+/*Hero Responsive on Mobile */
+@media(max-width: 462px) {
+    .hero{
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .hero img{
+        width: 100%;
+        height: auto;
+    }
+    .hero_content h5{
+        font-size: 25px;
+    }
+    .hero_content{
+        width: 100%;
+        font-size: 16px;
+       
+    }
+
+    .hero_content h5::after{
+        width: 25%;
+    }
+
+}
+
+/*iphone x, 12 mini, 13 mini and others smaller */
+@media(max-width: 376px) {
+    .hero_content h5::after{
+        width: 29%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Card Styling  BOTH HOBBIES AND PORTFOLIO SECTION*/
 .Hobbies_cards, .Portfolio_cards{
     margin-bottom: 155px;
 }
@@ -253,12 +366,13 @@ iframe{
     font-size: 36px;
     text-align: center;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 .All_cards{
     width: 85%;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin: 40px auto;
 
 }
 .Card_image img{
@@ -285,7 +399,7 @@ iframe{
 
 
 /*Card Responsive on Tablets*/
-@media(max-width: 815px) {
+@media(max-width: 838px) {
 
     .All_cards{
         justify-content: center;
@@ -319,6 +433,135 @@ iframe{
         margin-top: 20%;
     }
 }
+
+
+
+
+
+/*Favorate Vidoes/Books Header*/
+.favs{
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* University Section */
+.Uni_section{
+    margin: 60px auto;
+}
+.Uni_section h3{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+.Uni_cards{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.Uni_cards a{
+    width: 50%;
+}
+.Uni_cards a img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.221);
+}
+
+.Uni_content {
+    width: 50%;
+}
+.Uni_content h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+/*Card Responsive on Tablets*/
+@media(max-width: 838px){
+    .Uni_cards a{
+        width: 65%;
+    }
+    .Uni_content {
+        width: 50%;
+    }
+    .Uni_content p{
+        font-size: 12px;
+    }
+}
+@media(max-width: 815px) {
+    
+
+    .Uni_section h3, .favs{
+        font-size: 36px;
+    }
+    .Uni_cards a{
+        width: 50%;
+    }
+    .Uni_content {
+        width: 50%;
+    }
+    .Uni_content p{
+        font-size: 13px;
+    }
+
+  
+}
+/*Card Responsive on Mobile */
+@media(max-width: 462px) {
+    .Uni_section h3, .favs{
+        font-size: 26px;
+    }
+
+    .Uni_cards{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Uni_cards a{
+        width: 90%;
+    }
+    .Uni_content {
+        width: 95%;
+    }
+    
+    .Uni_content p{
+        font-size: 14px;
+    }
+
+}
+/*iphone x, 12 mini, 13 mini and others smaller */
+@media(max-width: 376px) {
+    .Uni_content {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

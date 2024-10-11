@@ -43,7 +43,12 @@
                 </li class="collapse_on_mobile">
 
                 <li class="collapse_on_mobile">
-                    <a href="#fav_movies">Favourite Movies</a>
+                    <a href="#University">Univeristy</a>
+                </li>
+
+
+                <li class="collapse_on_mobile">
+                    <a href="#fav_movies">Favourite Videos</a>
                 </li>
 
                 <li class="collapse_on_mobile">
@@ -83,7 +88,11 @@
                     </li>
     
                     <li class="nav-link">
-                        <a href="#fav_movies">Favourite Movies</a>
+                        <a href="#University">Univeristy</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#fav_movies">Favourite Videos</a>
                     </li>
     
                     <li class="nav-link">
@@ -100,22 +109,30 @@
 
 <!------------------PAGE CONTENT----------------->
 
-    <div class="container" id="Home">
+<div class="Hero_page" id="Home">
 
-    <h3>Simon Ddungu's Portfolio</h3>  
-    <hr >  
+    <!--<h3>Simon Ddungu's Portfolio</h3> --> 
+   <!-- <hr >  -->
+        <div class="hero">
+            <img src="images/vec.jpg" alt="Vector Programming image">
+                <div class="hero_content">
+                    <div>
+                        <h5 id="Bio">Simon's Biography</h5>
+                    </div>
+                    <p>
+                        Simon Ddungu is currently pursing a Bachelors degree in <b><span class="blue_text">Computer Science</span></b> at ISBAT University,
+                        driven by a passion for Computers and Software Engineering, He aspires to be a successful <b><i><span class="blue_text">Fullstack Software Engineer</span></i></b> capable of building fully functioning web apps, mobile apps and softwares at large.
+                    </p>
+                    <p>
+                        Beyond Academics, He loves playing chess as well as following the latest news in footabll and NBA Basketball.
+                        <br> Simon is very dedicated and commited to excelling professionally in the field of Software Engineering.
+                    </p>
+                </div>
+        </div>
+
+</div>
     
-        <h5 id="Bio">Biography</h5>
-        <p>
-            Simon Ddungu is currently pursing a Bachelors degree in <b>Computer Science</b> at ISBAT University,
-            driven by a passion for Computers and Software Engineering, He aspires to be a successful <b><i>Fullstack Software Engineer</i></b> capable of building fully functioning web apps, mobile apps and softwares at large.
-        </p>
-        <p>
-            Beyond Academics, He loves playing chess as well as following the latest news in footabll and NBA Basketball.
-            <br> Simon is very dedicated and commited to excelling professionally in the field of Software Engineering.
-        </p>
-    </div>
-    
+<!--
     <div class="container">
         <h5>Writing Code</h5>
 
@@ -128,6 +145,8 @@
         </a>
 
     </div>
+
+-->
 
 <!--  TYRING TO USE CARDS INSTEAD
         
@@ -161,7 +180,7 @@
                     <!--FOOTBALL-->
                     <div class="Each_card">
                         <div class="Card_image">
-                            <img src="images/CR7.jpg" alt="C. Ronaldo image">
+                            <img src="images/Messi_Ronaldo_Final.jpg" alt="C. Ronaldoand Messi image">
                         </div>
                         <div class="card_description">
                             <h6>Watching Football</h6>
@@ -174,7 +193,7 @@
                         <!--BASKETBALL-->
                         <div class="Each_card">
                             <div class="Card_image">
-                                <img src="images/curry.jpg" alt="Chef Curry image">
+                                <img src="images/basketball legends.jpg" alt="Chef Curry image">
                             </div>
                             <div class="card_description">
                                 <h6>Playing Basketball</h6>
@@ -250,7 +269,8 @@
 
 
     <div class="container">
-        <h5>Favourite Books</h5>
+        <h5 class="favs">Favourite Books</h5>
+        
 
         <table class="table">
             <thead>
@@ -285,34 +305,44 @@
     <br >
 
 
-    <div class="container">
-        <h5>Current University</h5>
+    <div class="container Uni_section" id="University">
+        <h3>Current University</h3>
         <hr >
-            <figure>
+            <div class="Uni_cards">
                 <a href="https://isbatuniversity.ac.ug/">
-                    <img src="https://www.isbatuniversity.ac.ug/wp-content/uploads/2021/03/Screenshot-2021-03-18-at-2.37.56-PM-1024x640.png" width="300" alt="ISBAT University Image">
+                    <img src="images/ISBAT Univeristy.jpg" alt="ISBAT University">
                 </a>
-                <figcaption>A look at ISBAT University</figcaption>
-            </figure>
+                <div class="Uni_content">
+                    <h5>ISBAT Univeristy</h5>
+                    <p>ISBAT University is among the leaders in <span class="blue_text">Information Technology</span> education in Uganda, dedicated to shaping future innovators and tech leaders. 
+                    Known for its <span class="blue_text">cutting-edge curriculum</span> and industry-focused approach, 
+                    ISBAT University provides students with both theoretical foundations and hands-on experience in the IT field.</p>
+                    <p>
+                    With advanced computer laboratories and collaborative learning environment, the university fosters innovation, creativity and critical thinking. 
+                    A diverse and inclusive community enriches the academic experience, preparing graduates to excel in the fast-evolving global tech landscape.
+                    </p>  
+                </div>
+            </div>
     </div>
 
     <br >
     <br >
     
     <div class="container" id="fav_movies">
-        <h5>Favourite Movies</h5>
+        <h5 class="favs">Favourite Videos</h5>
         <hr >
-        <iframe src="https://www.youtube.com/embed/QdBZY2fkU-0" name="my_iframe" title="Movies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/3RDaPV_rJ1Y" name="my_iframe" title="Movies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <hr>
 
-        <a class="btn btn-dark" href="https://www.youtube.com/embed/QdBZY2fkU-0" target="my_iframe">
-            Grand Theft Auto VI
+        <a class="btn btn-dark" href="https://www.youtube.com/embed/3RDaPV_rJ1Y" target="my_iframe">
+            THE WOMAN KING
         </a>
+        
         <a class="btn btn-dark" href="https://www.youtube.com/embed/BIhNsAtPbPI" target="my_iframe">
             007: No Time To Die
          </a>
-        <a class="btn btn-dark" href="https://www.youtube.com/embed/sJbexcm4Trk" target="my_iframe">
-            Cyberpunk 2077: Phantom Liberty
+         <a class="btn btn-dark" href="https://www.youtube.com/embed/QdBZY2fkU-0" target="my_iframe">
+            Grand Theft Auto VI
         </a>
 
         
