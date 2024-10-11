@@ -105,7 +105,6 @@ width: 100%;
     list-style: none;
     display: block;
     float: right;
-    transition: all 0.75s ease;
 }
 
 .Mobile_Hamburger_Menu{
@@ -424,7 +423,7 @@ iframe{
         width: 85%;
         justify-content: space-between;
         flex-wrap: nowrap;
-       margin-bottom: 20px;
+        margin-bottom: 20px;
     }
     .Hobbies_cards, .Portfolio_cards{
         margin-bottom: 50px;
@@ -465,7 +464,7 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    
 }
 .Uni_cards a{
     width: 50%;
@@ -473,11 +472,12 @@ iframe{
 .Uni_cards a img{
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.221);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.221);
 }
 
 .Uni_content {
     width: 50%;
+    margin-left: 50px;
 }
 .Uni_content h5{
     font-size: 20px;
@@ -519,7 +519,10 @@ iframe{
     .Uni_section h3, .favs{
         font-size: 26px;
     }
-
+    .Uni_content h5{
+        margin-bottom: 15px;
+    }
+    
     .Uni_cards{
         margin-top: 35px;
         display: flex;
@@ -528,9 +531,11 @@ iframe{
     }
     .Uni_cards a{
         width: 90%;
+        margin-bottom: 30px;
     }
     .Uni_content {
         width: 95%;
+        margin-left: 0;
     }
     
     .Uni_content p{
