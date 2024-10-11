@@ -271,7 +271,7 @@ iframe{
 }
 .hero_content h5{
     font-size: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-weight: 700;
 }
 .hero_content h5::after{
